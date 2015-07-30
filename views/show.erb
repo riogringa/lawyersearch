@@ -1,3 +1,14 @@
-<h2><%= @lawyer.firstname %></h2>
-<h2><%= @lawyer.lastname %></h2>
-<h2><%= @lawyer.city %></h2>
+<h2>Me too</h2>
+
+<ul>
+  <% @lawyers.each do |lawyer|%>
+    <li>
+      <%= lawyer.firstname %>
+      <%= lawyer.lastname %>
+
+      <%= lawyer.city %>
+ </li>
+  <% end %>
+
+
+</ul>
