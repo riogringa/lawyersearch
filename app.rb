@@ -17,7 +17,7 @@ end
  #end
 
 get '/lawyers' do
-  #city = params['city_name']
+  @city = params['city_name']
   @lawyers = Lawyer.where(city: params[:city_name])
   erb :show
  end

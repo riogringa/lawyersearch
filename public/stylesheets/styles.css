@@ -7,7 +7,9 @@ cite {
 
 body {
 margin: 100px;
-background-color: blue;
 
 }
  
+.center-text {
+  text-align: center;
+}
