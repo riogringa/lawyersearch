@@ -1,0 +1,56 @@
+
+
+<h2 class="center-text">Immigration Lawyers in <%= @city  %></h2>  
+<br>    
+  <table class="table table-bordered">
+    <thead>
+     <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+      <tr>
+      <% @lawyers.each do |lawyer|%>
+    <tbody>
+      <tr>
+        <td><%= lawyer.firstname %></td>
+        <td><%= lawyer.lastname %></td>
+        <td><%= lawyer.address %></td>
+        <td><%= lawyer.city %>, <%= lawyer.state %> <%= lawyer.zipcode %></td>
+        <td><%= lawyer.phone %></td>
+        <td><%= lawyer.notes %></td>
+      </tr>
+      <% end %>
+    </tbody>
+
+
+<div class="container">
+  <div class="row">
+    <div id="custom-search-input">
+      <div class="input-group col-md-12">
+        <form action="/lawyers" method="get">
+          <input type="text" name="city_name" class="  search-query form-control" placeholder="Enter Your City" autofocus/>
+          <span class="input-group-btn">
+          <button class="btn btn-danger" type= "" type="button">
+          <span class=" glyphicon glyphicon-search"></span>
+          </button>
+           </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+      
+
+
+
+
+
+

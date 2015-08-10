@@ -1,0 +1,15 @@
+cite { 
+  color: #999;
+  font-size: 11px;
+  line-height: 80%;
+  text-align: right;
+}
+
+body {
+margin: 100px;
+
+}
+ 
+.center-text {
+  text-align: center;
+}
